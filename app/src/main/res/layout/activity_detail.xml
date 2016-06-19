@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/view2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/detail_toolbar"></include>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:text="为什么知乎会火?"
+                android:id="@+id/tvTitle"
+                android:textSize="20dp"
+                android:paddingBottom="30dp"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+
+            android:id="@+id/view"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="85dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:src="@drawable/avastar"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="top"
+                android:textColor="#000"
+                android:text="jkgeekjack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="top"
+                android:textColor="#aaa"
+                android:text="安卓入门学徒"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_msg"/>
+        <TextView
+            android:layout_marginTop="400dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_msg"/>
+        <TextView
+            android:layout_marginTop="700dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_msg"/>
+    </RelativeLayout>
+
+
+</ScrollView>

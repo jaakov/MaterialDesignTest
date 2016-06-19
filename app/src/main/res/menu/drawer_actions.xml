@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--只能单选-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_home"
+            android:icon="@drawable/iconfont_home"
+            android:title="首页" />
+        <item
+            android:id="@+id/navigation_item_discovery"
+            android:checked="true"
+            android:icon="@drawable/iconfont_source"
+            android:title="发现" />
+        <item
+            android:id="@+id/navigation_item_focus"
+            android:icon="@drawable/iconfont_blog"
+            android:title="关注" />
+        <item
+            android:id="@+id/navigation_item_collect"
+            android:icon="@drawable/iconfont_custom_view"
+            android:title="收藏" />
+        <item
+            android:id="@+id/navigation_item_round"
+            android:icon="@drawable/iconfont_custom_view"
+            android:title="圆桌" />
+        <item
+            android:id="@+id/navigation_item_message"
+            android:icon="@drawable/iconfont_custom_view"
+            android:title="私信" />
+    </group>
+    <!--其他item-->
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_switch_theme"
+                android:checkable="true"
+                android:title="切换主题" />
+
+            <item
+                android:id="@+id/navigation_item_about"
+                android:checkable="true"
+                android:title="设置" />
+        </menu>
+    </item>
+    
+</menu>
